@@ -1,0 +1,150 @@
+ENCAPSULATION 
+
+CODE :
+
+class test:
+    def detail(self,name,age):
+        self.name=name
+        self.age=age
+        print("Name is : ",obj.name)
+        print("Age is : ",obj.age)
+    def com_det(self,comname,loc):
+        self.comname=comname
+        self.loc=loc
+        print("company name is : ",self.comname)
+        print("Company location : ",self.loc)
+obj=test()
+obj.detail("Hari",23)
+obj.com_det("Chadura","Musiri")
+print("Company name : ",obj.comname," ","Location : ",obj.loc)
+
+
+# Encapsulation Private method
+
+class test:
+    def det(self,name,age):
+        self.__name=name
+        self.__age=age
+        print("Name is : ",self.__name," ","Age is : ",self.__age)
+obj=test()
+obj.det("Hari",23)
+print("-------------------------------------------")
+class test:
+    def det(self,name,age):
+        self.__name=name
+        self.__age=age
+    def show(self):
+        print("Name is : ",self.__name," ","Age is : ",self.__age)
+obj=test()
+obj.det("Hari",23)
+obj.show()
+
+# Encapsulation Protected Method
+
+class det:
+    _name="hari"
+    _age=23
+    def details(self):
+        print("Name is : ",self._name)
+        print("Age is : ",self._age)
+obj=det()
+obj.details()
+
+print("user input -----------------------------")
+
+class det:
+    def __init__(self,_name,_age):
+        self._name=n
+        self._age=a
+    def details(self):
+        print("Name is : ",self._name)
+        print("Age is : ",self._age)
+n=input("Enter Your Name : ")
+a=int(input("Enter Your Age : "))
+obj=det(n,a)
+obj.details()
+
+print("------------------------------------------")
+
+class det:
+    def __init__(self,_name,_age):
+        self._name=n
+        self._age=a
+    def details(self):
+        pass
+        
+class det1(det):
+    def details1(self):
+        print("Name is : ",self._name)
+        print("Age is : ",self._age)
+n=input("Enter Your Name : ")
+a=int(input("Enter Your Age : "))
+obj=det1(n,a)
+obj.details1()
+
+# Encapsulation Getter & Setter Method
+
+class pro:
+    def setname(self,n):
+        self.__name=n
+    def getname(self):
+        return self.__name
+    def setage(self,a):
+        self.__age=a
+    def getage(self):
+        return self.__age
+    def show(self):
+        print("Name is :",obj.__name," ","Age is :",obj.__age)
+obj=pro()
+obj.setname("Hari")
+obj.setage(23)
+obj.show()
+
+print("-------------------------------------")
+
+# class pro:
+#     def setname(self,n):
+#         self.__name=n
+#     def getname(self):
+#         return self.__name
+#     def setage(self,a):
+#         self.__age=a
+#     def getage(self):
+#         return self.__age
+# class inher(pro):
+#     def show(self):
+#         print("Name is :",obj.__name," ","Age is :",obj.__age)
+# obj=inher()
+# obj.setname("Hari")
+# obj.setage(23)
+# obj.show()
+
+#  Private variable doesnot inherit
+
+
+OUTPUT
+
+
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/encapsulation.py
+Name is :  Hari
+Age is :  23
+company name is :  Chadura
+Company location :  Musiri
+Company name :  Chadura   Location :  Musiri
+Name is :  Hari   Age is :  23
+-------------------------------------------
+Name is :  Hari   Age is :  23
+Name is :  hari
+Age is :  23
+user input -----------------------------
+Enter Your Name : Hariharan
+Enter Your Age : 23
+Name is :  Hariharan
+Age is :  23
+------------------------------------------
+Enter Your Name : RAjkumar
+Enter Your Age : 23
+Name is :  RAjkumar
+Age is :  23
+Name is : Hari   Age is : 23
+-------------------------------------

@@ -1,0 +1,62 @@
+<div data-w-id="483cd0ea-0ffd-1df5-02c0-5a28799302cf" class="split-content header-left">
+<a aria-current="page" href="/" class="router-link-active router-link-exact-active brand w-nav-brand w--current">
+<img src="/img/Maggana.34955794.png" alt="Maggana logo" class="header-logo">
+</a>
+<nav role="navigation" class="nav-menu w-nav-menu">
+	<a aria-current="page" href="/" class="router-link-active router-link-exact-active nav-link w--current">Home</a>
+	<div data-hover="false" data-delay="0" data-w-id="8d41c972-856f-446c-3022-9951bcba0af8" class="header-dropdown w-dropdown">
+	<div class="header-dropdown-toggle w-dropdown-toggle">
+	<div class="nav-link"> Pages<span class="dropdown-icon px-2"></span>
+	</div>
+	</div>
+	<nav class="dropdown-list w-dropdown-list">
+	<div class="menu-grid-wrapper"><div class="w-layout-grid menu-grid">
+	<div>
+	<h4 class="mega-menu-title hidden-mobile">Pages</h4>
+	<div class="menu-2-columns"><div class="mega-menu-column-1">
+	<a aria-current="page" href="/" class="router-link-active router-link-exact-active mega-menu-link w--current">Home</a>
+	<a href="/courses" class="mega-menu-link">Courses</a><a href="/purchased-courses" class="mega-menu-link">Purchased Courses</a>
+	</div>
+	<div class="mega-menu-column-3">
+		<a href="/blog-list-view" class="mega-menu-link">Blog Posts</a>
+		<a href="/webinar-list-view" class="mega-menu-link"> Events</a>
+		<a href="/my-event-list" class="mega-menu-link">My Events</a>
+	</div>
+	<div class="mega-menu-column-3">
+	</div>
+	</div>
+	</div>
+	<div class="mega-menu-column-4 mt-12">
+		<a href="/about" class="mega-menu-link">About</a>
+		<a href="/contact-us" class="mega-menu-link">Contact</a>
+	</div>
+	</div>
+	</div>
+	</nav>
+	</div>
+	</nav>
+	</div>
+<div data-w-id="483cd0ea-0ffd-1df5-02c0-5a2879930313" class="split-content header-right">
+   <a href="/profiles" class="w-auto md:w-56 px-0 z-50 flex justify-center">
+	<div class="flex items-center cursor-pointer gap-2">
+	  <div class="flex items-center">
+	   <div>
+	     <img src="https://demo.api.maggana.com/medias/profile/5437683.jpg" alt="" class="w-10 h-10 rounded-full border-2 border-white">
+	   </div>
+	  </div>
+	  <div class="font-normal md:font-semibold text-black lg:text-black capitalize text-xs md:text-base hidden md:flex">Demo Student</div>
+	</div>
+   </a>
+   <div class="spacer header-right">
+   </div>
+   <button class="hidden lg:flex button-primary header-button w-button"> Logout </button>
+   <div data-w-id="63a3d12c-d009-7b48-0e75-aa6a4e6df1c4" class="menu-button lg:hidden">
+     <div class="flex flex-col gap-1.5 justify-center h-full"><div class="border-2 border-gray-600 mx-1">
+     </div>
+     <div class="border-2 border-gray-600 mx-1">
+     </div>
+     <div class="border-2 border-gray-600 mx-1">
+     </div>
+   </div>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+CODE : 
+
+
+a=["apple","Orange","grapes","watermelon","dragon_fruit"]
+print(len(a))
+print(a[1])
+print(a[-1])
+print(a[:2])
+print(a[1:])
+print(a[-3:-2])
+a.insert(2,"casunet")
+print(a)
+b=[1,2,3]
+print(type(b[1]))
+a.extend(b)
+print(a)
+a.append("apple")
+print(a)
+print(len(a))
+a.pop(8)
+print(a)
+a.remove(1)
+print(a)
+del a[6]
+print(a)
+print(a.count("apple"))
+print(a.index("apple"))
+a.clear()
+print(a)
+
+
+OUTPUT :
+
+
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/list.py
+5
+Orange
+dragon_fruit
+['apple', 'Orange']
+['Orange', 'grapes', 'watermelon', 'dragon_fruit']
+['grapes']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 3]
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 3, 'apple']
+10
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 'apple']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 2, 'apple']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 2]
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/list.py
+5
+Orange
+dragon_fruit
+['apple', 'Orange']
+['Orange', 'grapes', 'watermelon', 'dragon_fruit']
+['grapes']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 3]
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 3, 'apple']
+10
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 'apple']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 2, 'apple']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 'apple']
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/list.py
+5
+Orange
+dragon_fruit
+['apple', 'Orange']
+['Orange', 'grapes', 'watermelon', 'dragon_fruit']
+['grapes']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 3]
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 3, 'apple']
+10
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 'apple']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 2, 'apple']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 'apple']
+2
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/list.py
+5
+Orange
+dragon_fruit
+['apple', 'Orange']
+['Orange', 'grapes', 'watermelon', 'dragon_fruit']
+['grapes']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 3]
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 3, 'apple']
+10
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 'apple']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 2, 'apple']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 'apple']
+2
+0
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/list.py
+5
+Orange
+dragon_fruit
+['apple', 'Orange']
+['Orange', 'grapes', 'watermelon', 'dragon_fruit']
+['grapes']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit']
+<class 'int'>
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 3]
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 3, 'apple']
+10
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 1, 2, 'apple']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 2, 'apple']
+['apple', 'Orange', 'casunet', 'grapes', 'watermelon', 'dragon_fruit', 'apple']
+2
+0
+[]
+
+

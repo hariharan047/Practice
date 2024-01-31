@@ -1,0 +1,194 @@
+INHERITANCE ::
+
+class parent:
+    def parent_details(self,fname,mname):
+        self.fname=fname
+        self.mname=mname
+        print("Father Name : ",fname)
+        print("Mother Name : ",mname)
+class child1(parent):
+    def child1_details(self,c1name):
+        print("Child1 Name : ",c1name)
+class child2(parent):
+    def child2_details(self,c2name):
+        print("Child2 Name : ",c2name)
+obj=child1()
+obj.parent_details("Srinivasan","Saraswathi")
+obj.child1_details("Hariharan")
+obj1=child2()
+obj1.parent_details("Srinivasan","Saraswathi")
+obj1.child2_details("Nivetha")
+
+
+print("--------------------------------------------------")
+print("Single Inheritance : ")
+class person:
+    def __init__(self):
+        print("This is base class constructor")
+    def personal(self,name,age,gender):
+        print("This is personal details : ")
+        print("Name : ",name," ","Age :",age," ","Gender : ",gender)
+class company(person):
+    def __init__(self):
+        print("This is child class constructor")
+        super().__init__()
+    def com_details(self,name,location):
+        super().personal("Hariharan",23,"Male")
+        print("This is company details")
+        print("Company Name : ",name," ","Location : ",location)
+obj=company()
+obj.com_details("Chadura","Musiri")
+
+print("--------------------------------------------------")
+
+
+print("Multilevel Inheritance :")
+class person:
+    def __init__(self):
+        print("This is Person Class Constructor")
+    def personal_deatils(self,name,age,gender):
+        print("Name :",name," ","Age :",age," ","Gender :",gender)
+class company(person):
+    def __init__(self):
+        super().__init__()
+        print("This is Company Class Constructor")
+    def com_details(self,name,location):
+        super().personal_deatils("Hariharan",23,"Male")
+        print("Company Name :",name," ","Location :",location)
+class other(company):
+    def __init__(self):
+        super().__init__()
+        print("This is Other Class Constructor")
+    def other_details(self,salary,desgination):
+        super().com_details("Chadura","Musiri")
+        print("Salary :",salary," ","Designation :",desgination)
+obj=other()
+obj.other_details(20000,"Developer")
+
+print("--------------------------------------------------")
+
+class person:
+    def __init__(self):
+        print("This is Person Class Constructor")
+    def personal_deatils(self,name,age,gender):
+        print("Name :",name," ","Age :",age," ","Gender :",gender)
+class company(person):
+    def __init__(self):
+        super().__init__()
+        print("This is Company Class Constructor")
+    def com_details(self,name,location):
+        super().personal_deatils(Emp_name,Emp_age,Emp_gender)
+        print("Company Name :",name," ","Location :",location)
+class other(company):
+    def __init__(self):
+        super().__init__()
+        print("This is Other Class Constructor")
+    def other_details(self,salary,desgination):
+        super().com_details(com_name,com_loc)
+        print("Salary :",salary," ","Designation :",desgination)
+obj=other()
+print("Enter Your Personal Details : ")
+Emp_name=input("Enter Employee Name :")
+Emp_age=int(input("Enter Your Age :"))
+Emp_gender=input("Enter Your Gender :")
+print("Enter Your Company Details : ")
+com_name=input("Enter Your Company Name :")
+com_loc=input("Enter Your Company Location :")
+print("Enter Your Other Details : ")
+sal=int(input("Enter Your Salary :"))
+a=input("Enter Designation : ")
+obj.other_details(sal,a)
+
+print("--------------------------------------------------")
+
+class person:
+    def personal_deatils(self,name,age,gender):
+        print("Name :",name," ","Age :",age," ","Gender :",gender)
+class company():
+    def com_details(self,name,location):
+        print("Company Name :",name," ","Location :",location)
+class other():
+    def other_details(self,salary,desgination):
+        print("Salary :",salary," ","Designation :",desgination)
+class all_detail(person,company,other):
+    def all(self):
+        super().personal_deatils(Emp_name,Emp_age,Emp_gender)
+        super().com_details(com_name,com_loc)
+        super().other_details(sal,a)
+
+obj=all_detail()
+print("Enter Your Personal Details : ")
+Emp_name=input("Enter Employee Name :")
+Emp_age=int(input("Enter Your Age :"))
+Emp_gender=input("Enter Your Gender :")
+print("Enter Your Company Details : ")
+com_name=input("Enter Your Company Name :")
+com_loc=input("Enter Your Company Location :")
+print("Enter Your Other Details : ")
+sal=int(input("Enter Your Salary :"))
+a=input("Enter Designation : ")
+obj.all()
+
+print("--------------------------------------------------")
+
+
+OUTPUT :: 
+
+
+/bin/python /home/hariharans/loop/inheritance1.py
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/inheritance1.py
+Father Name :  Srinivasan
+Mother Name :  Saraswathi
+Child1 Name :  Hariharan
+Father Name :  Srinivasan
+Mother Name :  Saraswathi
+Child2 Name :  Nivetha
+--------------------------------------------------
+Single Inheritance : 
+This is child class constructor
+This is base class constructor
+This is personal details : 
+Name :  Hariharan   Age : 23   Gender :  Male
+This is company details
+Company Name :  Chadura   Location :  Musiri
+--------------------------------------------------
+Multilevel Inheritance :
+This is Person Class Constructor
+This is Company Class Constructor
+This is Other Class Constructor
+Name : Hariharan   Age : 23   Gender : Male
+Company Name : Chadura   Location : Musiri
+Salary : 20000   Designation : Developer
+--------------------------------------------------
+This is Person Class Constructor
+This is Company Class Constructor
+This is Other Class Constructor
+Enter Your Personal Details : 
+Enter Employee Name :hari
+Enter Your Age :23
+Enter Your Gender :male
+Enter Your Company Details : 
+Enter Your Company Name :chadura
+Enter Your Company Location :musiri
+Enter Your Other Details : 
+Enter Your Salary :30000
+Enter Designation : developer
+Name : hari   Age : 23   Gender : male
+Company Name : chadura   Location : musiri
+Salary : 30000   Designation : developer
+--------------------------------------------------
+Enter Your Personal Details : 
+Enter Employee Name :hariharan
+Enter Your Age :23
+Enter Your Gender :male
+Enter Your Company Details : 
+Enter Your Company Name :Chadura
+Enter Your Company Location :Musiri
+Enter Your Other Details : 
+Enter Your Salary :20000
+Enter Designation : Developer
+Name : hariharan   Age : 23   Gender : male
+Company Name : Chadura   Location : Musiri
+Salary : 20000   Designation : Developer
+--------------------------------------------------
+

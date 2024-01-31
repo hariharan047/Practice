@@ -1,0 +1,75 @@
+CODE:
+
+user={
+  "name" : "Hari",
+  "Age" : "23",
+  "IsMarried" : False
+ }
+print(user) 
+print(type(user))
+print(user["name"])
+print(user.get('age'))
+print(user.keys())
+print(user.values())
+print(user.items())
+for i in user:
+    print(i,":",user[i])
+for x,y in user.items():
+    print(x,y)
+for i in user.values():
+    print(i)
+user.update({"Gender" : "Male"})
+print(user)
+user.pop("Gender")
+print(user)
+user.popitem()
+print(user)
+a=user.copy()
+print(a)
+user.clear()
+print(user)
+user=a.copy()
+del user
+use=('key1','key2','key3')
+use1=(10,22,33)
+for i in use1:
+    if(i==10):
+        dic1=dict.fromkeys(use,i)
+        print(dic1)
+    if(i==22):
+        dic2=dict.fromkeys(use,i)
+        print(dic2)
+    if(i==33):
+        dic3=dict.fromkeys(use,i)
+        print(dic3)
+        dic =(dic1,dic2,dic3)
+print(dic)
+
+OUtput :[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/dict.py
+{'name': 'Hari', 'Age': '23', 'IsMarried': False}
+<class 'dict'>
+Hari
+None
+dict_keys(['name', 'Age', 'IsMarried'])
+dict_values(['Hari', '23', False])
+dict_items([('name', 'Hari'), ('Age', '23'), ('IsMarried', False)])
+name : Hari
+Age : 23
+IsMarried : False
+name Hari
+Age 23
+IsMarried False
+Hari
+23
+False
+{'name': 'Hari', 'Age': '23', 'IsMarried': False, 'Gender': 'Male'}
+{'name': 'Hari', 'Age': '23', 'IsMarried': False}
+{'name': 'Hari', 'Age': '23'}
+{'name': 'Hari', 'Age': '23'}
+{}
+{'key1': 10, 'key2': 10, 'key3': 10}
+{'key1': 22, 'key2': 22, 'key3': 22}
+{'key1': 33, 'key2': 33, 'key3': 33}
+({'key1': 10, 'key2': 10, 'key3': 10}, {'key1': 22, 'key2': 22, 'key3': 22}, {'key1': 33, 'key2': 33, 'key3': 33})
+
+

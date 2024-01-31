@@ -1,0 +1,90 @@
+Enter First Number : 23
+Enter Second Number : 2
+Enter Third Number : 12
+Arithematic operator  ; 
+Add :  25
+Sub :  21
+Mul :  46
+Div :  11.5
+Mod :  1
+Exp :  529
+Floor Div :  11
+Arithematic Operator is Finished-----
+Assignment Operator : 
+Assign :  12
+Add :  17
+Sub :  15
+Mul :  30
+Div :  6.0
+Floor Div :  0.0
+Exp :  0.0
+Mod :  0.0
+Assignment Operator is finished---
+Comparison operator : 
+False
+True
+True
+False
+True
+False
+Comparison Operator is Finished ----
+Logical Operator : 
+True
+True
+False
+logical Operator is finished ----
+Identity Operator : 
+['string', 'hi']
+False
+True
+140700168663232
+140699941747200
+140700168663232
+[hariharans@fedora ~]$ /bin/python /home/hariharans/Documents/operators.py
+Enter First Number : 23
+Enter Second Number : 2
+Enter Third Number : 23
+Arithematic operator  ; 
+Add :  25
+Sub :  21
+Mul :  46
+Div :  11.5
+Mod :  1
+Exp :  529
+Floor Div :  11
+Arithematic Operator is Finished-----
+Assignment Operator : 
+Assign :  23
+Add :  28
+Sub :  26
+Mul :  52
+Div :  10.4
+Floor Div :  1.0
+Exp :  1.0
+Mod :  1.0
+Assignment Operator is finished---
+Comparison operator : 
+False
+True
+True
+False
+True
+False
+Comparison Operator is Finished ----
+Logical Operator : 
+True
+True
+False
+logical Operator is finished ----
+Identity Operator : 
+['string', 'hi']
+False
+True
+139800652755136
+139800652806656
+139800652755136
+Identity Operator finished ----
+Membership Operator : 
+True
+True
+Membership Operator finished ----

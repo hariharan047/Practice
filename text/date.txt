@@ -1,0 +1,32 @@
+CODE : 
+
+import datetime as dt
+today=dt.datetime.today()
+new=dt.date.today()
+print(new)
+print("Day :",new.day)
+print("Month : ",new.month)
+print("Year : ",new.year)
+tim=dt.datetime.now()
+print(tim)
+print("hour : ",tim.hour)
+print("minute : ",tim.minute)
+print("Second : ",tim.second)
+print("microseconds : ",tim.microsecond)
+tar=dt.datetime(2024,1,1,12,0,0,0)
+diff=tar-today
+print(diff)
+
+OUTPUT :
+
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/date.py
+2023-08-04
+Day : 4
+Month :  8
+Year :  2023
+2023-08-04 12:40:53.738871
+hour :  12
+minute :  40
+Second :  53
+microseconds :  738871
+149 days, 23:19:06.261294

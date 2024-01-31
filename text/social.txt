@@ -1,0 +1,205 @@
+social
+
+box-sizing: border-box;
+color: rgb(181, 181, 181);
+flex-basis: 33.3333%;
+flex-grow: 0;
+flex-shrink: 0;
+font-family: "Nunito Sans", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 40px;
+max-width: 33.3333%;
+overflow-wrap: break-word;
+padding-left: 15px;
+padding-right: 15px;
+position: relative;
+text-align: left;
+width: 100%
+
+a-href
+
+background-color: rgba(0, 0, 0, 0);
+border-left-color: rgba(255, 255, 255, 0.2);
+border-left-style: solid;
+border-left-width: 1px;
+box-sizing: border-box;
+color: rgb(181, 181, 181);
+display: block;
+font-family: "Nunito Sans", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 40px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-left: 0px;
+overflow-wrap: break-word;
+padding-bottom: 0px;
+padding-left: 14px;
+padding-right: 14px;
+padding-top: 0px;
+text-align: left;
+text-decoration-color: rgb(181, 181, 181);
+text-decoration-line: none;
+text-decoration-style: solid;
+text-decoration-thickness: auto;
+transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: all;
+transition-timing-function: linear
+
+a-href > i
+
+box-sizing: border-box;
+color: rgb(181, 181, 181);
+display: inline-block;
+font-family: "Font Awesome 5 Brands";
+font-size: 12px;
+font-style: normal;
+font-variant-alternates: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-variant-position: normal;
+font-weight: 400;
+line-height: 12px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+overflow-wrap: break-word;
+text-align: left;
+text-rendering: auto;
+
+
+div col-8
+
+box-sizing: border-box;
+color: rgb(181, 181, 181);
+flex-basis: 66.6667%;
+flex-grow: 0;
+flex-shrink: 0;
+font-family: "Nunito Sans", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 40px;
+max-width: 66.6667%;
+overflow-wrap: break-word;
+padding-left: 15px;
+padding-right: 15px;
+position: relative;
+text-align: left;
+width: 100%
+
+div>ul
+
+align-self: flex-end;
+box-sizing: border-box;
+color: rgb(181, 181, 181);
+float: right;
+font-family: "Nunito Sans", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 40px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-bottom: 0px;
+margin-left: 20px;
+margin-right: 0px;
+margin-top: 0px;
+overflow-wrap: break-word;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+text-align: left
+
+ul>li
+
+border-left-color: rgba(255, 255, 255, 0.2);
+border-left-style: solid;
+border-left-width: 1px;
+box-sizing: border-box;
+color: rgb(181, 181, 181);
+float: left;
+font-family: "Nunito Sans", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 40px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+overflow-wrap: break-word;
+padding-bottom: 0px;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 0px;
+text-align: left
+
+li>a
+
+background-color: rgba(0, 0, 0, 0);
+box-sizing: border-box;
+color: rgb(181, 181, 181);
+font-family: "Nunito Sans", sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 40px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+overflow-wrap: break-word;
+text-align: left;
+
+element
+Best Match li
+match-parent
+
+bootstrap.min.css:10
+Parent Match body
+left
+text-decoration-color: rgb(181, 181, 181);
+text-decoration-line: none;
+text-decoration-style: solid;
+text-decoration-thickness: auto;
+transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: all;
+transition-timing-function: linear
+
+a>i
+
+
+box-sizing: border-box;
+color: rgb(255, 255, 255);
+display: inline-block;
+font-family: "Font Awesome 5 Free";
+font-size: 13px;
+font-style: normal;
+font-variant-alternates: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-variant-position: normal;
+font-weight: 900;
+line-height: 13px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-right: 7px;
+overflow-wrap: break-word;
+text-align: left;
+
+html.css:579
+Best Match li
+match-parent
+
+bootstrap.min.css:10
+Parent Match body
+left
+text-rendering: auto;
+vertical-align: middle
+

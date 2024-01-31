@@ -1,0 +1,288 @@
+POLYMORPHISM ::
+
+CODE :
+
+print("Polymorphism : ")
+class process:
+    def __init__(self,num1,num2):
+        self.num1=num1
+        self.num2=num2
+    def __add__(self,other):
+        add=self.num1+self.num2
+        add1=other.num1+other.num2
+        Total=add+add1
+        print("Total is :",Total)
+        print("-------------------------------------------")
+    def __sub__(self,other):
+        sub=self.num1+self.num2
+        sub1=other.num1+other.num2
+        Subtraction=sub-sub1
+        print("Subtraction is :",Subtraction)
+        print("-------------------------------------------")
+    def __mul__(self,other):
+        mul=self.num1+self.num2
+        mul1=other.num1+other.num2
+        Multiply=mul*mul1
+        print("Multiplication is :",Multiply)
+        print("-------------------------------------------")
+    def __truediv__(self,other):
+        div=self.num1+self.num2
+        div1=other.num1+other.num2
+        Division=div/div1
+        print("Division :",Division)
+        print("-------------------------------------------")
+    def __mod__(self,other):
+        mod=self.num1+self.num2
+        mod1=other.num1+other.num2
+        Modulus=mod%mod1
+        print("Modulus :",Modulus)
+        print("-------------------------------------------")
+    def __floordiv__(self,other):
+        number=(self.num1+self.num2)
+        number1=other.num1+other.num2
+        FloorDivision=number//number1
+        print("FloorDivision is : ",FloorDivision)
+obj=process(20,30)
+obj1=process(35,7)
+addtion=obj+obj1
+subtract=obj-obj1
+multiplication=obj*obj1
+division=obj/obj1
+modu=obj%obj1
+floordiv=obj//obj1
+print("----------------------------------------------------------")
+
+#Comparision operator
+print("Comparision operator ")
+class comparision:
+    def __init__(self,num):
+        self.num=num
+    def __gt__(self,other):
+        number1=self.num
+        number2=other.num
+        if number1>number2:
+            print("number1 is greater than number2 :",number1)
+        else:
+            print("number2 is greater than number num1 :",number2)
+        print("--------------------------------")
+    def __lt__(self,other):
+        number1=self.num
+        number2=other.num
+        if number1<number2:
+           print("number1 is lesser than number2 :",number1)
+        else:
+           print("number2 is lesser than number num1 :",number2)
+        print("--------------------------------------------------")
+    def __eq__(self,other):
+        number1=self.num
+        number2=other.num
+        if number1==number2:
+            print("number1 is equal to number2")
+        else:
+            print("number1 and number2 are not equal")
+        print("------------------------------------------------------------")
+obj=comparision(20)
+obj1=comparision(30)
+obj>obj1
+obj<obj1
+obj==obj1
+print("----------------------------------------------------------")
+
+
+# Method Overloading :
+print("Method Overloading : ")
+class a:
+    def hari(self):
+        print("Hi")
+    def hari(self,name):
+        print("Name :",name)
+    def hari(self,name,age):
+        print("Name :",name," ","Age :",age)
+    def hari(self,name,age,gender):
+        print("Name :",name," ","Age :",age," ","Gender :",gender)
+obj=a()
+obj.hari("Hari",23,"Male")
+
+print("Other Method : ")
+class a:
+    def hari(self,name=None,age=None,gender=None):
+        if(name!=None and age!=None and gender!=None):
+            print("Name is :",name," ","Age is :",age," ","Gender is :",gender)
+        elif(name!=None and age!=None):
+            print("Name is :",name," ","Age is :",age)
+        elif(name!=None and gender!=None):
+            print("Name is :",name," ","Gender is :",gender)
+        else:
+            print("Name is :",name)
+obj=a()
+obj.hari("Hariharan")
+obj.hari("Hari",23)
+obj.hari("Hari","Male")
+obj.hari("Hari",23,"Male")
+print("----------------------------------------------------------")
+
+# Using * Arbitary arguments
+
+class a:
+    def fun(self,*val):
+        value=0
+        for i in val:
+            value+=i
+        print("Total :",value)
+obj=a()
+obj.fun(10,20)
+obj.fun(10,20,30,40,50)
+obj.fun(10)
+print("----------------------------------------------------------")
+
+# Dispatch module :
+print("Mulitple Dispatch Overloading : ")
+from multipledispatch import dispatch
+class a:
+    @dispatch(str,str)
+    def hari(fname,lname):
+        print("Name :",fname+lname)
+    @dispatch(int,int,int)
+    def hari(date,month,year):
+        print(date,":",month,":",year)
+obj=a()
+obj.hari("Hari","Haran")
+obj.hari(30,11,1999)
+
+print("----------------------------------------------------------")
+
+# Method Overriding :
+print("Polymorphism with Inheritance and Method Overriding ")
+'''
+class hari:
+    def det(self,name,age,gender):
+        print("Name is :",name," ","Age is :",age," ","Gender is :",gender)
+class haran:
+    def det(self,name,age,gender):
+        print("Name is :",name," ","Age is :",age," ","Gender is :",gender)
+class mine:
+    def det(self,name,age,gender):
+        print("Name is :",name," ","Age is :",age," ","Gender is :",gender)
+print("Enter Hari Details :")
+a=input("Enter your name :")
+b=int(input("enter your age :"))
+c=input("Enter your gender :")
+print("Enter Haran Details :")
+a1=input("Enter your name :")
+b1=int(input("enter your age :"))
+c1=input("Enter your gender :")
+print("Enter Mine Details :")
+a2=input("Enter your name :")
+b2=int(input("enter your age :"))
+c2=input("Enter your gender :")
+obj=hari()
+obj.det(a,b,c)
+obj1=haran()
+obj1.det(a1,b1,c1)
+obj2=mine()
+obj2.det(a2,b2,c2) 
+'''
+class hari:
+    def speak(self):
+        return "I am Hari"
+class haran:
+    def speak(self):
+        return "I am Haran"
+class mine:
+    def speak(self):
+        return "I am Hariharan"
+obj=hari()
+obj1=haran()
+obj2=mine()
+for i in (obj,obj1,obj2):
+    print(i.speak())
+
+print("----------------------------------------------------------")
+
+class vehicle:
+    def __init__(self,name,brand,color,price):
+        self.name=name
+        self.brand=brand
+        self.color=color
+        self.price=price
+    def details(self):
+        print("Details :")
+        print("Vehicle Name :",self.name," ","Brand :",self.brand," ","Color :",self.color," ","price :",self.price)
+    def speed(self):
+        pass
+    def gear(self):
+        pass
+class car(vehicle):
+    def speed(self):
+        print("Maximun speed is 240 kmph")
+    def gear(self):
+        print("car has 5 gears")
+class scooty(vehicle):
+    def speed(self):
+        print("Scooty Maximum speed is 100 Kmph")
+    def gear(self):
+        print("Scooty has no gears")
+Car=car("Lamborghini-Advendador Svj","Lamborghini","Green","35Cr")
+Car.details()
+Car.speed()
+Car.gear()
+Scooty=scooty("TVS Jupiter","TVS","Purple","80Thousand")
+Scooty.details()
+Scooty.speed()
+Scooty.gear()
+
+
+
+OUTPUT :
+
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/polymorphism.py
+Polymorphism : 
+Total is : 92
+-------------------------------------------
+Subtraction is : 8
+-------------------------------------------
+Multiplication is : 2100
+-------------------------------------------
+Division : 1.1904761904761905
+-------------------------------------------
+Modulus : 8
+-------------------------------------------
+FloorDivision is :  1
+----------------------------------------------------------
+Comparision operator 
+number2 is greater than number num1 : 30
+--------------------------------
+number1 is lesser than number2 : 20
+--------------------------------------------------
+number1 and number2 are not equal
+------------------------------------------------------------
+----------------------------------------------------------
+Method Overloading : 
+Name : Hari   Age : 23   Gender : Male
+Other Method : 
+Name is : Hariharan
+Name is : Hari   Age is : 23
+Name is : Hari   Age is : Male
+Name is : Hari   Age is : 23   Gender is : Male
+----------------------------------------------------------
+Total : 30
+Total : 150
+Total : 10
+----------------------------------------------------------
+Mulitple Dispatch Overloading : 
+Name : HariHaran
+30 : 11 : 1999
+----------------------------------------------------------
+Polymorphism with Inheritance and Method Overriding 
+I am Hari
+I am Haran
+I am Hariharan
+----------------------------------------------------------
+Details :
+Vehicle Name : Lamborghini-Advendador Svj   Brand : Lamborghini   Color : Green   price : 35Cr
+Maximun speed is 240 kmph
+car has 5 gears
+Details :
+Vehicle Name : TVS Jupiter   Brand : TVS   Color : Purple   price : 80Thousand
+Scooty Maximum speed is 100 Kmph
+Scooty has no gears

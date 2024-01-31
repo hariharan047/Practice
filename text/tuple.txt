@@ -1,0 +1,80 @@
+CODE :
+
+
+a=(1,2.5,True,"hari")
+print(type(a))
+print(len(a))
+for i in a:
+    print(type(i))
+print(a[3])
+print(a[0:2])
+print(a[:3])
+print(a[0:])
+print(a[-2])
+print(a[-4:-1]) 
+b=list(a)
+b=("hari")
+print(type(b))
+b=("hari",)
+print(type(a))
+c=a+b
+print(c)
+print(type(c))
+print(c.count("hari"))
+c=(a,b)
+print(c)
+x=(c,)*10
+print(x)
+a1=(1,2,3,4,5,6)
+print(min(a1))
+print(max(a1))
+b1=(4,3,6,5,9,1,2)
+ #b2=list(b1)
+s=tuple(sorted(b1))
+b2=list(b1)
+print(s)
+b2.pop(4)
+b1=tuple(b2)
+print(b1)
+b2.clear()
+b1=tuple(b2)
+print(b1)
+b1=tuple(b2)
+del b1
+print(b1)
+
+
+OUTPUT :
+
+
+
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/tuple.py
+<class 'tuple'>
+4
+<class 'int'>
+<class 'float'>
+<class 'bool'>
+<class 'str'>
+hari
+(1, 2.5)
+(1, 2.5, True)
+(1, 2.5, True, 'hari')
+True
+(1, 2.5, True)
+<class 'str'>
+<class 'tuple'>
+(1, 2.5, True, 'hari', 'hari')
+<class 'tuple'>
+2
+((1, 2.5, True, 'hari'), ('hari',))
+(((1, 2.5, True, 'hari'), ('hari',)), ((1, 2.5, True, 'hari'), ('hari',)), ((1, 2.5, True, 'hari'), ('hari',)), ((1, 2.5, True, 'hari'), ('hari',)), ((1, 2.5, True, 'hari'), ('hari',)), ((1, 2.5, True, 'hari'), ('hari',)), ((1, 2.5, True, 'hari'), ('hari',)), ((1, 2.5, True, 'hari'), ('hari',)), ((1, 2.5, True, 'hari'), ('hari',)), ((1, 2.5, True, 'hari'), ('hari',)))
+1
+6
+(1, 2, 3, 4, 5, 6, 9)
+(4, 3, 6, 5, 1, 2)
+()
+Traceback (most recent call last):
+  File "/home/hariharans/loop/tuple.py", line 41, in <module>
+    print(b1)
+          ^^
+NameError: name 'b1' is not defined. Did you mean: 'b'?

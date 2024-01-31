@@ -1,0 +1,132 @@
+css
+
+box-sizing: border-box;
+color: rgb(109, 109, 109);
+display: flex;
+font-family: "Nunito Sans", sans-serif;
+font-size: 16px;
+font-weight: 700;
+height: 99px;
+line-height: 30px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+overflow-wrap: break-word;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+position: relative;
+text-align: left;
+vertical-align: middle;
+width: 491.067px
+
+
+li
+
+align-items: center;
+box-sizing: border-box;
+color: rgb(109, 109, 109);
+display: flex;
+float: left;
+font-family: "Nunito Sans", sans-serif;
+font-size: 16px;
+font-weight: 700;
+height: 99px;
+line-height: 30px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-bottom: 0px;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 0px;
+overflow-wrap: break-word;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+position: relative;
+text-align: left;
+-moz-box-align: center
+
+
+hover
+
+background-color: rgb(255, 255, 255);
+box-shadow: rgba(0, 0, 0, 0.1) 15px 15px 38px 0px;
+box-sizing: border-box;
+color: rgb(109, 109, 109);
+float: none;
+font-family: "Nunito Sans", sans-serif;
+font-size: 16px;
+font-weight: 700;
+left: -40px;
+line-height: 30px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+opacity: 0;
+overflow-wrap: break-word;
+padding-bottom: 25px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 25px;
+position: absolute;
+text-align: left;
+top: 100px;
+transform: matrix(1, 0, 0, 1, 0, 30);
+transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: all;
+transition-timing-function: ease-in-out;
+visibility: hidden;
+white-space: nowrap;
+width: 280px;
+z-index: 10;
+a
+
+background-color: rgba(0, 0, 0, 0);
+box-sizing: border-box;
+color: rgb(26, 27, 30);
+display: block;
+font-family: "Nunito Sans", sans-serif;
+font-size: 14px;
+font-weight: 700;
+line-height: 30px;
+list-style-image: none;
+list-style-position: outside;
+list-style-type: none;
+outline-color: rgb(26, 27, 30);
+outline-style: none;
+outline-width: 0px;
+overflow-wrap: break-word;
+padding-bottom: 5px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 5px;
+position: relative;
+text-align: left;
+text-decoration-color: rgb(26, 27, 30);
+text-decoration-line: none;
+text-decoration-style: solid;
+text-decoration-thickness: auto;
+text-transform: uppercase;
+transition-delay: 0s;
+transition-duration: 0.3s;
+transition-property: all;
+transition-timing-function: linear;
+visibility: hidden;
+white-space: nowrap
+
+
+
+

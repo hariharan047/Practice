@@ -1,0 +1,82 @@
+CODE :
+
+
+a={1,2,3}
+print(a)
+print(type(a))
+a.add(4)
+print(a)
+print("---------------------")
+a.pop()
+print(a)
+print("---------------------")
+b={"hari","haran","hi"}
+a.update(b)
+print(a)
+print("---------------------")
+a.remove("hi")
+print(a)
+print("---------------------")
+
+a.discard('haran')
+print(a)
+print("---------------------")
+
+a.clear()
+print(a)
+print("---------------------")
+
+b={"hari","haran","hi"}
+a.update(b)
+del a
+print("---------------------")
+a1={1,2,3,4}
+b={'a','b','c','d'}
+c=a1.union(b)
+print(c)
+print("---------------------")
+
+c1=a1.isdisjoint(b)
+print(c1)
+d=a1.issubset(c)
+print(d)
+print("---------------------")
+b.add(1)
+print(b)
+inter=a1.intersection(b)
+print(inter)
+print("---------------------")
+a1.intersection_update(b)
+print(a1)
+
+
+
+
+OUTPUT :
+
+
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/set.py
+{1, 2, 3}
+<class 'set'>
+{1, 2, 3, 4}
+---------------------
+{2, 3, 4}
+---------------------
+{'hi', 2, 3, 4, 'haran', 'hari'}
+---------------------
+{2, 3, 4, 'haran', 'hari'}
+---------------------
+{2, 3, 4, 'hari'}
+---------------------
+set()
+---------------------
+---------------------
+{1, 2, 3, 4, 'c', 'b', 'a', 'd'}
+---------------------
+True
+True
+---------------------
+{'c', 'b', 1, 'a', 'd'}
+{1}
+---------------------
+{1}

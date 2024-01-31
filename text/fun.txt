@@ -1,0 +1,449 @@
+Fruta en almibar
+
+<template>
+  <div>
+    <section>
+      <div class="my-16">
+        <div class="flex flex-row justify-between my-12">
+          <h2 class="text-3xl text-center mx-10 my-10 text-[#4F4F4F]">
+            TODOS LOS PRODUCTOS
+          </h2>
+          <div
+            class="flex flex-row justify-around w-[420px] items-center my-10"
+          >
+            <p class="font-bold text-xl mb-2 px-4">14 artículos</p>
+            <select
+              name=""
+              class="w-full block appearance-none bg-gray-200 border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded focus_border-gray-500"
+            >
+              <option value="all">Todos</option>
+              <option value="Abarrotes">Abarrotes</option>
+              <option value="Fruta en almibar">Fruta en almibar</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex flex-row justify-around">
+          <div class="block mx-10 w-[416px]">
+            <h2 class="text-4xl text-[#4F4F4F] text-justify">THE NUT HOUSE</h2>
+            <p class="text-xl text-justify">
+              Deliciosa línea premium de semillas y frutas secas empacadas,
+              bajas en calorías.
+            </p>
+            <p class="text-xl my-3 text-justify">
+              <b>Sabías que...</b>Además de ser riquísimos, los frutos secos
+              ayudan a reducir los niveles de colesterol, a perder peso y a
+              prevenir el deterioro cognitivo. ¡Se volverán tus favoritos!
+            </p>
+          </div>
+          <div class="block w-[832px]">
+            <div class="flex flex-col-3">
+              <div class="flex flex-row justify-around flex-wrap">
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun1.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Almendra fileteada "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 rounded bg-[#EFC432]"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun2.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Almendra entera "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 rounded bg-[#EFC432]"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun3.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Arándano deshidratado "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 bg-[#EFC432] rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun4.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Uva pasa "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 bg-[#EFC432] rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun5.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Ciruela pasa sin hueso "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 bg-[#EFC432] rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun6.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Snack Miguelito Spicy Trail Mix "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 bg-[#EFC432] rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun7.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Cerezas con tallo tipo Marrasquino "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 bg-[#EFC432] rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun8.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Cerezas sin tallo tipo Marrasquino "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 bg-[#EFC432] px-4 rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun9.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Cerezas sin tallo tipo Marrasquino "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 bg-[#EFC432] rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun10.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Duraznos en Cubo "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 bg-[#EFC432] rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun11.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Duraznos en mitades "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 bg-[#EFC432] rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun12.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Mangos rebanados "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 bg-[#EFC432] rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun13.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Almendra Entera "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 bg-[#EFC432] rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+                <div class="block my-4 w-1/3">
+                  <a href="">
+                    <img
+                      src="@/assets/FunFruit/fun14.jpg"
+                      alt=""
+                      class="w-full"
+                    />
+                    <p class="text-center text-lg my-4">
+                      "Piña rebanada "
+                      <a href=""></a>
+                    </p>
+                    <img
+                      src="@/assets/NutHouse/detail.svg"
+                      alt=""
+                      class="block mx-auto"
+                    />
+                    <button
+                      class="block my-4 mx-auto py-2 px-4 bg-[#EFC432] rounded"
+                    >
+                      "compror en"
+                      <img
+                        src="@/assets/amazon-logo.svg"
+                        alt=""
+                        class="mx-1 inline-block items-end"
+                      />
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "FunFruit",
+};
+</script>
+
+<style></style>
+

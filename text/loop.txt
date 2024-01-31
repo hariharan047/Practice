@@ -1,0 +1,139 @@
+loop
+
+a=[1,2,3,4,5]
+for i in range(5):
+    print(a)
+    print("----------")
+    if len(a)==2:
+        break
+    print(a)
+    print("---------")
+    if len(a)==2:
+        continue
+
+
+output
+
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/loop.py
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/loop.py
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/loop.py
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/loop.py
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+---------
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+---------
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/loop.py
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+---------
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/loop.py
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+---------
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+---------
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+---------
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+---------
+[1, 2, 3, 4, 5]
+----------
+[1, 2, 3, 4, 5]
+---------
+[hariharans@fedora loop]$ ^C
+
+for loop
+
+
+
+a=int(input("Enter Your Tamil Mark : "))
+b=int(input("Enter Your English Mark : "))
+c=int(input("Enter Your Maths Mark : "))
+d=int(input("Enter Your Science Mark : "))
+e=int(input("Enter Your Social Mark : "))
+c=a+b+c+d+e
+a1=c/5
+for i in range(1):
+    if a>=35 and b>=35 and c>=35 and d>=35 and e>=35:
+        if a1>0 and a1<=100:
+            if a1>=35 and a1<=50:
+                print(a1,"Your Grade Is : D")
+            elif a1>50 and a1<=70:
+                print(a1,"Your Grade Is : C")
+            elif a1>70 and a1<=90:
+                print(a1,"Your Grade Is : B")
+            elif a1>90 and a1<=100:
+                print(a1,"Your Grade Is : A")
+            else:
+                print(a1,"You Are Failled In The Exam")
+        else:
+            print(" ")
+    else:
+        print("You Are Failed In The Exam")
+else:
+    print("Process Is Completed")
+    
+    
+OUTPUT
+
+[hariharans@fedora loop]$ /bin/python /home/hariharans/loop/loop.py
+Enter Your Tamil Mark : 35
+Enter Your English Mark : 35
+Enter Your Maths Mark : 35
+Enter Your Science Mark : 35
+Enter Your Social Mark : 35
+35.0 Your Grade Is : D
+Process Is Completed
+[hariharans@fedora loop]$
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,164 @@
+CODE :
+
+
+a=int(input("Enter First Number : "))
+b=int(input("Enter Second Number : "))
+c=int(input("Enter Third Number : "))
+print("Arithematic operator  ; ")
+print("Add : ",a+b)
+print("Sub : ",a-b)
+print("Mul : ",a*b)
+print("Div : ",a/b)
+print("Mod : ",a%b)
+print("Exp : ",a**b)
+print("Floor Div : ",a//b)
+print("Arithematic Operator is Finished-----")
+print("Assignment Operator : ")
+print("Assign : ",c)
+c+=5
+print("Add : ",c)
+c-=2
+print("Sub : ",c)
+c*=2
+print("Mul : ",c)
+c/=5
+print("Div : ",c)
+c//=7
+print("Floor Div : ",c)
+c**=6
+print("Exp : ",c)
+c%=3
+print("Mod : ",c)
+print("Assignment Operator is finished---")
+print("Comparison operator : ")
+print(a==b)
+print(a!=b)
+print(a>b)
+print(a<b)
+print(a>=b)
+print(a<=b)
+print("Comparison Operator is Finished ----")
+print("Logical Operator : ")
+print(a>0 and a<100)
+print(a>0 or a>5)
+print(not(a>0 and a<100))
+print("logical Operator is finished ----")
+print("Identity Operator : ")
+x=["string","hi"]
+y=["string","hi"]
+z=x
+print(z)
+print(x is y)
+print(x is z)
+print(id(x))
+print(id(y))
+print(id(z))
+print("Identity Operator finished ----")
+print("Membership Operator : ")
+print("string" in x)
+print("hello" not in x)
+print("Membership Operator finished ----")
+print("Bitwise Operator : ")
+print(6 & 3)
+print(6 | 3)
+print(6 ^ 3)
+print(5 ~ 5)
+print(6 << 8)
+print(2 >> 3)
+print("Bitwise Operatoe finished---")
+
+
+OUTPUT : 
+
+
+Enter First Number : 23
+Enter Second Number : 2
+Enter Third Number : 12
+Arithematic operator  ; 
+Add :  25
+Sub :  21
+Mul :  46
+Div :  11.5
+Mod :  1
+Exp :  529
+Floor Div :  11
+Arithematic Operator is Finished-----
+Assignment Operator : 
+Assign :  12
+Add :  17
+Sub :  15
+Mul :  30
+Div :  6.0
+Floor Div :  0.0
+Exp :  0.0
+Mod :  0.0
+Assignment Operator is finished---
+Comparison operator : 
+False
+True
+True
+False
+True
+False
+Comparison Operator is Finished ----
+Logical Operator : 
+True
+True
+False
+logical Operator is finished ----
+Identity Operator : 
+['string', 'hi']
+False
+True
+140700168663232
+140699941747200
+140700168663232
+[hariharans@fedora ~]$ /bin/python /home/hariharans/Documents/operators.py
+Enter First Number : 23
+Enter Second Number : 2
+Enter Third Number : 23
+Arithematic operator  ; 
+Add :  25
+Sub :  21
+Mul :  46
+Div :  11.5
+Mod :  1
+Exp :  529
+Floor Div :  11
+Arithematic Operator is Finished-----
+Assignment Operator : 
+Assign :  23
+Add :  28
+Sub :  26
+Mul :  52
+Div :  10.4
+Floor Div :  1.0
+Exp :  1.0
+Mod :  1.0
+Assignment Operator is finished---
+Comparison operator : 
+False
+True
+True
+False
+True
+False
+Comparison Operator is Finished ----
+Logical Operator : 
+True
+True
+False
+logical Operator is finished ----
+Identity Operator : 
+['string', 'hi']
+False
+True
+139800652755136
+139800652806656
+139800652755136
+Identity Operator finished ----
+Membership Operator : 
+True
+True
+Membership Operator finished ----
+

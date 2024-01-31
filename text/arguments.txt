@@ -1,0 +1,83 @@
+
+CODE :
+
+
+# Noreturn Type Without Arguments
+def fun():
+    a=int(input("enter first number : "))
+    b=int(input("enter second number : "))
+    c=a+b
+    print("Total : ",c)
+fun()
+#Noreturn Type With Arguments
+def sub(a1,b1): 
+    c1=a1-b1
+    print("sub : ",c1)
+sub(24,67)
+#Return Type Without Arguments
+def mul():
+    a=int(input("enter a number : "))
+    b=int(input("enter a number : "))
+    c=a*b
+    return c
+x=mul()
+print("Mul is :",x)
+# Return Type With Arguments
+def div(a,b):
+    c=a/b
+    return c
+x=div(30,3)
+print(x)
+# Arbitary Argument Function 
+def chadura(*employee):
+    print("Employee : ",employee)
+    for i in employee:
+     print("Employee : ",i)
+chadura("Sarathi","Mahendiran","Saranya","Rajkumar","Prabhu","Bala","Rahul","Hari","Ashwin","Shyam")
+# Keyword Arguments
+def key(name,age):
+    print(name ,"age is ",age)
+key("Hari",24)
+key(24,"Hari")
+key(name="Hari",age=24)
+key(age=24,name="Hari")
+def chadura(**emp):
+    print(emp)
+chadura(name="Hari",age=24,dender="Male")
+# Default Parameter Function
+def user(name,city="Trichy"):
+    print(name," is from ",city)
+user("Hari")
+user("Barath","Namakkal") 
+  
+  
+  
+  OUTPUT :
+  
+  [hariharans@fedora loop]$ /bin/python /home/hariharans/loop/noreturn.py
+enter firdt number : 23
+enter second number : 23
+Total :  46
+sub :  -43
+enter a number : 23
+enter a number : 6
+Mul is : 138
+10.0
+Employee :  ('Sarathi', 'Mahendiran', 'Saranya', 'Rajkumar', 'Prabhu', 'Bala', 'Rahul', 'Hari', 'Ashwin', 'Shyam')
+Employee :  Sarathi
+Employee :  Mahendiran
+Employee :  Saranya
+Employee :  Rajkumar
+Employee :  Prabhu
+Employee :  Bala
+Employee :  Rahul
+Employee :  Hari
+Employee :  Ashwin
+Employee :  Shyam
+Hari age is  24
+24 age is  Hari
+Hari age is  24
+Hari age is  24
+{'name': 'Hari', 'age': 24, 'dender': 'Male'}
+Hari  is from  Trichy
+Barath  is from  Namakkal

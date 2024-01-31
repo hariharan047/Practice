@@ -1,0 +1,79 @@
+<template>
+  <div>
+    <div>Hi This is Employee Form</div>
+    <div>
+      <form v-on:submit.prevent="addEmployee">
+        <table>
+          <tr>
+            <td>
+              <label>Enter Employee Name : </label>
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                required
+                v-model="EmpName"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Enter Employee Email : </label>
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                required
+                v-model="EmpEmail"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit">Submit</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div>
+      <table v-for="employee in employeeDetails" :key="employee">
+        <thead>
+          <th>Employee Name</th>
+          <th>Employee Email</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{employee.name}}</td>
+            <td>{{ employee.email }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "EmployeeForm",
+  data() {
+    return {
+      EmpName: "",
+      EmpEmail: "",
+      EmployeeDetails: [{ name: "" }, { email: "" }],
+    };
+  },
+  methods: {
+    addEmployee() {
+      let employee = {
+        name: this.EmpName,
+        email: this.EmpEmail,
+      };
+      this.EmployeeDetails.push(employee);
+      this.EmpName = null;
+      this.EmpEmail = null;
+    },
+  },
+};
+</script>
+
+<style></style>
+
